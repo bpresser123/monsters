@@ -65,9 +65,9 @@ class App extends Component {
           placeholder='Search it'
           // handleChange={ e => this.setState({ searchField: e.target.value })}
           handleChange = {this.handleChange}
-          // adding this.handleChange() to a button for example, would invoke the call on render but would not 
-          // work when clicked since nothing would be assigned to handleChane.
-          // Removing the () cretaes an aactual assignemt of the function 
+          // adding this.handleChange() to a button as an example, this would invoke the call on render but would not 
+          // work when clicked since nothing would be assigned to handleChange.
+          // Removing the () creates an actual assignment of the function 
         />
         <CardList monsters = {filteredMonsters} />
       </div>
